@@ -1,0 +1,129 @@
+{{ 'base.css' | asset_url | stylesheet_tag }}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    {% comment %} {{ section.settings.custom_liquid }} {% endcomment %}
+    <div class="footer__content-top page-width" style="display: flex">
+      <div
+        class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet scroll-trigger animate--slide-in"
+        data-cascade=""
+        style="--animation-order: 0;"
+      ></div>
+      <div
+        class="footer-block grid__item footer-block--menu scroll-trigger animate--slide-in"
+        data-cascade=""
+        style="--animation-order: 0;"
+      >
+        <h2 class="footer-block__heading inline-richtext">Quick links</h2>
+        <ul class="footer-block__details-content list-unstyled">
+          <li>
+            <a href="/collections/bags" class="link link--text list-menu__item list-menu__item--link"> Bags </a>
+          </li>
+          <li>
+            <a href="/collections/shoes" class="link link--text list-menu__item list-menu__item--link"> Shoes </a>
+          </li>
+          <li>
+            <a href="/pages/lookbook" class="link link--text list-menu__item list-menu__item--link"> Lookbook </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="footer-block grid__item footer-block--menu scroll-trigger animate--slide-in"
+        data-cascade=""
+        style="--animation-order: 1;"
+      >
+        <h2 class="footer-block__heading inline-richtext">Info</h2>
+        <ul class="footer-block__details-content list-unstyled">
+          <li>
+            <a href="/pages/about" class="link link--text list-menu__item list-menu__item--link"> About </a>
+          </li>
+          <li>
+            <a href="/pages/contact-us" class="link link--text list-menu__item list-menu__item--link"> Contact us </a>
+          </li>
+          <li>
+            <a href="/pages/shipping" class="link link--text list-menu__item list-menu__item--link">
+              Shipping policy
+            </a>
+          </li>
+          <li>
+            <a href="/blogs/news" class="link link--text list-menu__item list-menu__item--link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="footer-block grid__item scroll-trigger animate--slide-in"
+        data-cascade=""
+        style="--animation-order: 2;"
+      >
+        <h2 class="footer-block__heading inline-richtext">Our mission</h2>
+        <div class="footer-block__details-content rte">
+          <p>Quality materials, good designs, craftsmanship and sustainability.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom-liquid.presets.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": { "type": "text", "settings": { "text": "{{ product.vendor }}", "text_style": "uppercase" } },
+        "title": { "type": "title", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": { "picker_type": "button", "swatch_shape": "circle" }
+        },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": { "show_dynamic_checkout": true, "show_gift_card_recipient": true }
+        },
+        "description": { "type": "description", "settings": {} },
+        "collapsible_tab_rUWxgQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "perfume",
+            "content": "<p>Crafted from smooth calf leather. Canvas lining. Brushed gold hardware. Two interior pockets. Detachable and adjustable shoulder strap.</p>",
+            "page": ""
+          }
+        },
+        "share": { "type": "share", "settings": { "share_label": "Share" } }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible_tab_rUWxgQ",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_yyzHNR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_86Waya": {
+          "type": "heading",
+          "settings": {
+            "heading": "A new kind of bag.",
+            "heading_size": "h1"
+          }
+        },
+        "text_EBGqaX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unexpected shapes with smart details, functionality, a new luxury feel with a contemporary price point.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": ["heading_86Waya", "text_EBGqaX"],
+      "settings": {
+        "image": "shopify://shop_images/imgwithtext.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_h6Yng6": {
+        "type": "multicolumn",
+        "blocks": {
+          "column_MEJbP9": {
+            "type": "column",
+            "settings": {
+              "title": "Free Shipping",
+              "text": "<p>We offer free worldwide express shipping on all orders. You'll receive your order an estimated 1–4 days after shipment.<\/p>",
+              "link_label": "",
+              "link": ""
+            }
+          },
+          "column_8bfX7H": {
+            "type": "column",
+            "settings": {
+              "title": "Hassle-Free Exchanges",
+              "text": "<p>Exchanges are free. Try from the comfort of your home. We will collect from your home, work or an alternative address. <\/p>",
+              "link_label": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "column_MEJbP9",
+          "column_8bfX7H"
+        ],
+        "settings": {
+          "title": "",
+          "heading_size": "h1",
+          "image_width": "full",
+          "image_ratio": "adapt",
+          "columns_desktop": 2,
+          "column_alignment": "left",
+          "background_style": "primary",
+          "button_label": "",
+          "button_link": "",
+          "color_scheme": "",
+          "columns_mobile": "1",
+          "swipe_on_mobile": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": ["main", "image_with_text_yyzHNR", "multicolumn_h6Yng6", "related-products"]
+}

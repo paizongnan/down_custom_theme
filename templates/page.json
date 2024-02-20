@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": false,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collage_FjMmig": {
+      "type": "collage",
+      "blocks": {
+        "image_wFTDe7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_1.webp"
+          }
+        },
+        "image_AJPGHV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_2.webp"
+          }
+        }
+      },
+      "block_order": ["image_wFTDe7", "image_AJPGHV"],
+      "settings": {
+        "heading": "Summer inspiration",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 68,
+        "padding_bottom": 36
+      }
+    },
+    "collage_cGrBkc": {
+      "type": "collage",
+      "blocks": {
+        "image_YnzyhQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lookbook_3.webp"
+          }
+        },
+        "video_VGqeeG": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/lookbook_4.webp",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video"
+          }
+        }
+      },
+      "block_order": ["image_YnzyhQ", "video_VGqeeG"],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_fXkBhw": {
+      "type": "collage",
+      "blocks": {
+        "image_4D973V": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_KJ3xCx": {
+          "type": "image",
+          "settings": {}
+        },
+        "video_UMMdzM": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video"
+          }
+        }
+      },
+      "block_order": ["image_4D973V", "image_KJ3xCx", "video_UMMdzM"],
+      "settings": {
+        "heading": "             ",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["main", "collage_FjMmig", "collage_cGrBkc", "collage_fXkBhw"]
+}
